@@ -1,0 +1,255 @@
+body{
+    background-color:#BDEBF0 ;
+    margin: 0;
+}
+
+h1{
+    font-family: 'Roboto', Arial;
+    text-align: center;
+}
+
+a{  
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+h2, h3, h4{
+    font-family: 'Roboto', Arial;
+}
+
+h5{
+    margin: 0;
+    padding-top: 8px;
+    font-family: 'Roboto', Arial;
+    font-size: 17px;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    color: #575555;
+    margin: 0;
+    padding-bottom: 15px;;
+}
+
+.text_center{
+    text-align: center;
+}
+
+header{
+    padding-top: 20px;
+    background-color: #EBF7F5;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+
+nav a{
+    padding: 15px;
+    background-color: #BDEBF0;
+    margin: 5px;
+    width: px;
+    text-align: center;
+    color: #808080;
+    border-radius: 3%;
+}
+
+nav a:hover{
+    transform: scale(1.05,1);
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+}
+
+main{
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+
+main section{
+    background-color: #EBF7F5;
+    padding: 10px;
+    border-radius: 1%;
+    margin-top: 10px;
+}
+
+main section:hover{
+    transform: scale(1.01,1.01);
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+}
+
+.about_me_header{
+    text-align: center;
+}
+
+.img_central{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.projects_header{
+    text-align: center;
+}
+
+.project_small img{
+    width: 85%;
+    padding: 5px;
+}
+
+
+.project img{
+    width: 85%;
+    padding: 5px;
+}
+
+
+.project_large img{
+    width: 85%;
+    padding: 5px;
+}
+
+.project_image{
+    width: 60%;
+    padding-left: 15%;
+}
+
+.page_header{
+    text-align: center;
+}
+
+.git_button{
+    background: #9a80ca;
+    padding: 5px;
+    border-radius: 8%;
+    width: 55px;
+}
+
+.git_button:hover{
+    background: #aea0c9; ;
+}
+
+.git_button img{
+    width: 55px;
+    height: auto;
+    padding-top: 5px;
+}
+
+.button_grey{
+    background: lightgrey;
+}
+
+.button_grey:hover{
+    background: grey;
+}
+
+footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #EBF7F5;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer h2{
+    margin: 0;
+}
+
+footer section{
+    display: flex;
+    justify-content: center;
+}
+
+footer a{
+    padding: 5px;
+    color: #808080;
+}
+
+footer a:hover{
+    color: #000000;
+}
+
+main{
+    animation: fade_in 2s;
+}
+@keyframes fade_in {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+
+@media screen and (min-width: 850px){
+    main section{
+        margin: 0;
+    }
+
+    main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    }
+
+    .about_me_header{
+        grid-column: 1 / span 4;
+    }
+
+    .about_me_content{
+        grid-column: 1 / span 3;
+    }
+
+    .projects_header{
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .project_small{
+        grid-column: 1;
+        grid-row: 4 / span 2;
+    }
+
+    .project{
+        grid-row: 3 / span 3;
+    }
+    
+    .project_large{
+        grid-row: 3/ span 3;
+        grid-column: 3 / span 2;
+    }
+
+    .education{
+        grid-column: 1 / span 2;
+    }
+    
+    .experience{
+        grid-column: 3 / span 2;;
+    }
+
+    .page_header{
+        grid-column: 1 / span 4;
+    }
+
+    .display_fullwidth{
+        grid-column: span 4;
+    }
+    
+    .project_2wide{
+        grid-column: span 2;
+    }
+
+
+
+
+
+}
