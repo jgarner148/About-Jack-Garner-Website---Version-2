@@ -1,5 +1,5 @@
-const isMaintenancemode = true
+const isMaintenancemode = false
 
 if(isMaintenancemode){
-    document.head.innerHTML += `<meta http-equiv="refresh" content="0; unfinished.html" />`;
+    document.head.innerHTML += `<meta http-equiv="refresh" content="0; maintenance.html" />`;
 }
